@@ -10,7 +10,11 @@ Order of keywords
 - ORDER BY [ASC / DESC / ...]
 - LIMIT
 
+### Execution Order
 
+![image-20250701210736040](C:\Users\Mido Hany\AppData\Roaming\Typora\typora-user-images\image-20250701210736040.png)
+
+> More about this in Aggregation.md
 
 ---
 
