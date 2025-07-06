@@ -16,7 +16,7 @@ Other data types like `INTEGER`, `REAL`, `BOOLEAN`, ...
 ```sql
 SELECT job_posted_date AT TIME ZONE 'UTC' AT TIME ZONE 'EST'
 FROM job_postings_fact
-LIMIT 10;
+LIMIT 10;O
 ```
 
 So we first use at real date time zone - UTC in this example - then cast to target time zone.
