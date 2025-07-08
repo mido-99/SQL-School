@@ -37,3 +37,22 @@ FROM job_postings_fact
 LIMIT 10;
 ```
 
+---
+
+## Create New Table based on Data Extraction
+
+We can create tables based on values from specific rows on our table:
+
+```sql	
+CREATE TABLE january_jobs AS
+    SELECT * 
+    FROM job_postings_fact
+    WHERE EXTRACT(MONTH FROM job_posted_date) = 1;
+
+CREATE TABLE february_jobs AS
+    SELECT *
+    FROM job_postings_fact
+    WHERE EXTRACT(MONTH FROM job_posted_date) = 2;
+-- ...
+```
+
